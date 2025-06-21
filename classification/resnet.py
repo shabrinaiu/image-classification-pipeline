@@ -9,7 +9,7 @@ class ResNetClassifier(BaseClassifier):
         self.model = models.resnet50(pretrained=True)
         self.model.fc = torch.nn.Linear(self.model.fc.in_features, len(self.class_names))  # 8 car types
         self.model.load_state_dict(
-            torch.load("/content/classifier_best_weights.pth")
+            torch.load("./classifier_best_weights.pth")
         )  # Upload your weights
         self.model.eval()
 
