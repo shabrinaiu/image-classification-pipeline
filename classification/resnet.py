@@ -22,6 +22,6 @@ class ResNetClassifier(BaseClassifier):
 
         # Return a list of Classification objects, one per image in the batch
         return [
-            self.__output_prediction(pred, conf)
+            self._output_prediction(pred, conf)
             for pred, conf in zip(predicted.tolist(), confidences.tolist())
         ]
