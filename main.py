@@ -14,7 +14,7 @@ batch = batch_generator(VIDEO_PATH, BATCH_SIZE)
 
 detection_model = YOLODetector()
 
-detection_results = detection_model.predict(batch)
+detection_results = detection_model.detect(batch)
 
 classifier_model = ResNetClassifier()
 

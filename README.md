@@ -48,6 +48,12 @@ This project provides an end-to-end pipeline for image classification and object
    unzip ./data/archive.zip -d ./data/
    ```
 
+4. **Download the input video**
+   Download `input.mp4` to the `data` folder:
+   ```bash
+   curl -L -o ./data/input.mp4 'https://drive.google.com/uc?export=download&id=1GVFCHKC_kSMm2SbcdZu-Dg6cKNQu_zt-'
+   ```
+
 ## Usage
 
 
